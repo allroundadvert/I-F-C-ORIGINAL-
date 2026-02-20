@@ -8,14 +8,14 @@
 <!-- Social preview -->
 <meta property="og:title" content="I F C Original - Men's Clothing">
 <meta property="og:description" content="I saw one of your items, I love to buy! Can I have more info?">
-<meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/main/images/Screenshot_20260220-195839.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0138.jpg">
 <meta property="og:url" content="https://allroundadvert.github.io/I-F-C-ORIGINAL-/">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="I F C Original - Men's Clothing">
 <meta name="twitter:description" content="I saw one of your items, I love to buy! Can I have more info?">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/main/images/Screenshot_20260220-195839.jpg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0138.jpg">
 
 <style>
 body {
@@ -40,7 +40,7 @@ p {
   font-size: 1.2rem;
 }
 
-/* Floating Images */
+/* Floating clickable images */
 .floating-container {
   position: relative;
   height: 250px;
@@ -66,7 +66,6 @@ p {
   transform: scale(1.1);
   box-shadow: 0 0 35px #ffd700;
 }
-/* Stagger animation delays */
 .floating-item:nth-child(1){animation-delay:0s;}
 .floating-item:nth-child(2){animation-delay:3s;}
 .floating-item:nth-child(3){animation-delay:6s;}
@@ -74,29 +73,41 @@ p {
 .floating-item:nth-child(5){animation-delay:12s;}
 .floating-item:nth-child(6){animation-delay:15s;}
 .floating-item:nth-child(7){animation-delay:18s;}
+.floating-item:nth-child(8){animation-delay:21s;}
+.floating-item:nth-child(9){animation-delay:24s;}
 
 @keyframes floatLeft {
   0% {left:100%;}
   100% {left:-250px;}
 }
 
-/* Static clickable images */
+/* Static gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
 }
-.gallery img {
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-item img {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
-.gallery img:hover {
+.gallery-item img:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+.gallery-item p {
+  margin-top: 8px;
+  color: #ffd700;
+  font-weight: bold;
 }
 
 /* Buttons */
@@ -125,33 +136,89 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+
+/* Video */
+video {
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin: 30px 0;
+}
 </style>
 </head>
+
 <body>
 
 <h1>I F C Original - Men's Clothing</h1>
 <p>Original high-quality men’s clothing including baggy jeans, tops, belts, canvases, and more. Explore our latest collections below.</p>
 
-<!-- Floating images -->
+<!-- Video Section -->
+<video autoplay loop muted playsinline>
+  <source src="VID-20260220-WA0097.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Floating Clickable Images -->
 <div class="floating-container">
-  <div class="floating-item"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0063.jpg" alt="Clothing"></div>
-  <div class="floating-item"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0020.jpg" alt="Clothing"></div>
-  <div class="floating-item"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0021.jpg" alt="Clothing"></div>
-  <div class="floating-item"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0023.jpg" alt="Clothing"></div>
-  <div class="floating-item"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0024.jpg" alt="Clothing"></div>
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0138.jpg" alt="Baggy Jeans">
+    </a>
+  </div>
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0137.jpg" alt="Top">
+    </a>
+  </div>
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/IMG-20260220-WA0048(1).jpg" alt="Canvas">
+    </a>
+  </div>
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/IMG-20260220-WA0068(1).jpg" alt="Belt">
+    </a>
+  </div>
 </div>
 
-<!-- Static clickable images -->
+<!-- Static Gallery -->
 <div class="gallery">
-  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0026.jpg" alt="Clothing"></a>
-  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0030.jpg" alt="Clothing"></a>
-  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/main/IMG-20260220-WA0035.jpg" alt="Clothing"></a>
-  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/main/IMG-20260220-WA0036.jpg" alt="Clothing"></a>
+  <div class="gallery-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0132.jpg" alt="Canvas Top">
+    </a>
+    <p>Canvas Top - White</p>
+  </div>
+  <div class="gallery-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0130.jpg" alt="Belt">
+    </a>
+    <p>Leather Belt - Black</p>
+  </div>
+  <div class="gallery-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0121.jpg" alt="Baggy Jeans">
+    </a>
+    <p>Baggy Jeans - Blue</p>
+  </div>
+  <div class="gallery-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d36047f/IMG-20260220-WA0113.jpg" alt="Top">
+    </a>
+    <p>Top - Grey</p>
+  </div>
 </div>
+
+<!-- Additional Video -->
+<video autoplay loop muted playsinline>
+  <source src="VID-20260220-WA0055.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <!-- Buttons -->
-<a class="btn" href="https://wa.me/2347031368440" target="_blank">Contact on WhatsApp</a>
-<a class="btn" href="https://tiktok.com/@ifeanyianioga" target="_blank" style="background:#ff0055; box-shadow:0 0 15px #ff0055;">Visit TikTok</a>
+<a class="btn" href="https://wa.me/2347031368440" target="_blank">WhatsApp Us</a>
+<a class="btn" href="https://tiktok.com/@ifeanyianioga" target="_blank">TikTok</a>
 
 <footer>
   © 2026 I F C Original. All rights reserved.
