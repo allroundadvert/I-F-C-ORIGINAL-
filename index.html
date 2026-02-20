@@ -3,149 +3,198 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>I F C Original - Men's Clothing</title>
+<title>IFC ORIGINAL – All-Round Quality Men Clothing</title>
 
-<!-- Social preview -->
-<meta property="og:title" content="I F C Original - Men's Clothing">
-<meta property="og:description" content="I saw one of your items, I love to buy! Can I have more info?">
+<!-- SOCIAL SHARE -->
+<meta property="og:title" content="IFC ORIGINAL – All-Round Quality Men Clothing">
+<meta property="og:description" content="I saw one of your items and I love to buy. Can I have more info?">
 <meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/1771620723471.png">
 <meta property="og:url" content="https://allroundadvert.github.io/I-F-C-ORIGINAL-/">
 <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/1771620723471.png">
-
 <style>
 body{
   margin:0;
-  font-family:Segoe UI,Tahoma,Verdana,sans-serif;
-  background:linear-gradient(135deg,#1f1c2c,#928dab);
+  font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  background:#000;
   color:#fff;
   text-align:center;
+  overflow-x:hidden;
 }
 
-h1{
-  margin:30px 20px;
-  font-size:3rem;
+header{
+  padding:60px 20px;
+  background:linear-gradient(135deg,#000,#1a1a1a);
+}
+
+header h1{
+  font-size:3.2rem;
   color:#ffd700;
-  text-shadow:2px 2px 8px #000;
+  text-shadow:0 0 25px rgba(255,215,0,0.7);
 }
 
-/* Floating images */
+header h2{
+  font-size:1.3rem;
+  color:#ccc;
+  max-width:850px;
+  margin:auto;
+}
+
+/* VIDEO */
+video{
+  width:85%;
+  max-width:900px;
+  margin:40px auto;
+  border-radius:20px;
+  box-shadow:0 0 40px rgba(255,215,0,0.4);
+}
+
+/* FLOATING (ONLY 5 IMAGES) */
 .floating-container{
   position:relative;
   height:260px;
   overflow:hidden;
-  margin:40px 0;
+  margin:50px 0;
 }
+
 .floating-item{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
   animation:floatLeft 22s linear infinite;
 }
+
 .floating-item img{
-  width:180px;
-  margin:0 15px;
-  border-radius:12px;
-  box-shadow:0 0 20px #ffd700;
-  cursor:pointer;
+  width:200px;
+  border-radius:16px;
+  margin:0 20px;
+  box-shadow:0 0 25px rgba(255,215,0,0.6);
+  transition:transform .4s;
 }
-.floating-item:nth-child(1){animation-delay:0s}
-.floating-item:nth-child(2){animation-delay:3s}
-.floating-item:nth-child(3){animation-delay:6s}
-.floating-item:nth-child(4){animation-delay:9s}
-.floating-item:nth-child(5){animation-delay:12s}
-.floating-item:nth-child(6){animation-delay:15s}
+
+.floating-item img:hover{
+  transform:scale(1.15);
+}
+
+.floating-item:nth-child(1){animation-delay:0s;}
+.floating-item:nth-child(2){animation-delay:4s;}
+.floating-item:nth-child(3){animation-delay:8s;}
+.floating-item:nth-child(4){animation-delay:12s;}
+.floating-item:nth-child(5){animation-delay:16s;}
 
 @keyframes floatLeft{
-  0%{left:100%}
-  100%{left:-250px}
+  0%{left:100%;}
+  100%{left:-320px;}
 }
 
-/* Gallery */
+/* STATIC GALLERY */
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:20px;
-  padding:25px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  padding:40px;
 }
+
 .gallery img{
   width:100%;
-  border-radius:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.5);
-  cursor:pointer;
+  border-radius:18px;
+  box-shadow:0 0 25px rgba(0,0,0,.7);
   transition:transform .3s;
 }
+
 .gallery img:hover{
-  transform:scale(1.05);
+  transform:scale(1.08);
 }
 
-/* Video */
-video{
-  width:85%;
-  max-width:800px;
-  border-radius:15px;
-  box-shadow:0 15px 30px rgba(0,0,0,0.6);
-  margin:30px 0;
+/* BUTTONS */
+.buttons{
+  margin:50px 0;
 }
 
-/* Buttons */
 .btn{
   display:inline-block;
   margin:15px;
-  padding:15px 28px;
-  font-size:1.2rem;
+  padding:18px 30px;
+  font-size:1.1rem;
   font-weight:bold;
-  text-decoration:none;
+  border-radius:14px;
   color:#fff;
-  background:#25d366;
-  border-radius:12px;
-  box-shadow:0 0 20px #25d366;
+  text-decoration:none;
 }
-.btn:hover{transform:scale(1.08)}
+
+.whatsapp{background:#25d366;}
+.facebook{background:#1877f2;}
+.tiktok{background:#000;border:1px solid #fff;}
 
 footer{
-  background:#111;
-  padding:20px;
-  margin-top:40px;
-  color:#aaa;
+  padding:25px;
+  background:#000;
+  color:#777;
 }
 </style>
 </head>
 
 <body>
 
-<h1>I F C Original</h1>
+<header>
+  <h1>IFC ORIGINAL</h1>
+  <h2>All-Round Quality Men Clothing — Premium Fashion • Bold Identity • Original Style</h2>
+</header>
 
-<!-- Video -->
-<video autoplay muted loop playsinline>
-  <source src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/VID-20260220-WA0097.mp4" type="video/mp4">
+<!-- VIDEO -->
+<video autoplay loop muted playsinline>
+  <source src="VID-20260220-WA0097.mp4" type="video/mp4">
 </video>
 
-<!-- Floating Images -->
+<!-- FLOATING SECTION (ONLY 5) -->
 <div class="floating-container">
-  <div class="floating-item"><a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0138.jpg"></a></div>
-  <div class="floating-item"><a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0137.jpg"></a></div>
-  <div class="floating-item"><a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0132.jpg"></a></div>
-  <div class="floating-item"><a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0130.jpg"></a></div>
-  <div class="floating-item"><a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0121.jpg"></a></div>
-  <div class="floating-item"><a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0113.jpg"></a></div>
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy.%20Can%20I%20have%20more%20info?" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0138.jpg">
+    </a>
+  </div>
+
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0137.jpg">
+    </a>
+  </div>
+
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0132.jpg">
+    </a>
+  </div>
+
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0130.jpg">
+    </a>
+  </div>
+
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0121.jpg">
+    </a>
+  </div>
 </div>
 
-<!-- Static Gallery (ALL images, NO text) -->
+<!-- STATIC IMAGES (ALL OTHERS) -->
 <div class="gallery">
-  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0107.jpg"></a>
-  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/IMG-20260220-WA0035.jpg"></a>
-  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/IMG-20260220-WA0048(1).jpg"></a>
-  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/IMG-20260220-WA0068(1).jpg"></a>
+  <a href="https://wa.me/2347031368440"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0113.jpg"></a>
+  <a href="https://wa.me/2347031368440"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0107.jpg"></a>
+  <a href="https://wa.me/2347031368440"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0035.jpg"></a>
 </div>
 
-<a class="btn" href="https://wa.me/2347031368440" target="_blank">WhatsApp Us</a>
-<a class="btn" href="https://tiktok.com/@ifeanyianioga" target="_blank">TikTok</a>
+<!-- CONTACT -->
+<div class="buttons">
+  <a class="btn whatsapp" href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy.%20Can%20I%20have%20more%20info?" target="_blank">WhatsApp</a>
+  <a class="btn facebook" href="https://www.facebook.com/share/174qi1g7NZ/" target="_blank">Facebook</a>
+  <a class="btn tiktok" href="https://tiktok.com/@ifeanyianioga" target="_blank">TikTok</a>
+</div>
 
 <footer>
-© 2026 I F C Original
+© 2026 IFC ORIGINAL — Premium Men Clothing
 </footer>
 
 </body>
