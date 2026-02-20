@@ -13,48 +13,84 @@
 <meta property="og:type" content="website">
 
 <style>
-body{
+body {
   margin:0;
   font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   background:#0b0b0b;
   color:#fff;
   text-align:center;
+  overflow-x:hidden;
 }
 
 /* ===== HERO / TOP ===== */
 header{
-  padding:80px 20px 70px;
+  padding:100px 20px 100px;
   background:
-    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.8)),
     url("https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/1771620723471.png");
   background-size:cover;
   background-position:center;
 }
 
 header h1{
-  font-size:3.5rem;
+  font-size:4rem;
   letter-spacing:4px;
   color:#ffd700;
-  text-shadow:0 0 30px rgba(255,215,0,.8);
+  text-shadow:0 0 35px rgba(255,215,0,.8);
   margin-bottom:10px;
 }
 
 header h2{
-  font-size:1.4rem;
-  max-width:900px;
+  font-size:1.5rem;
+  max-width:1000px;
   margin:auto;
   color:#e0e0e0;
   line-height:1.6;
 }
 
-/* ===== GALLERY ===== */
+/* ===== FLOATING IMAGES ===== */
+.floating-container{
+  position:relative;
+  height:280px;
+  overflow:hidden;
+  margin:40px 0;
+}
+.floating-item{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  white-space:nowrap;
+  animation: floatLeft 20s linear infinite;
+}
+.floating-item img{
+  width:200px;
+  border-radius:15px;
+  margin:0 15px;
+  cursor:pointer;
+  box-shadow:0 0 25px #ffd700;
+  transition:transform 0.4s, box-shadow 0.4s;
+}
+.floating-item img:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 40px #ffd700;
+}
+/* stagger animations */
+.floating-item:nth-child(1){animation-delay:0s;}
+.floating-item:nth-child(2){animation-delay:4s;}
+.floating-item:nth-child(3){animation-delay:8s;}
+
+@keyframes floatLeft{
+  0% {left:100%;}
+  100% {left:-250px;}
+}
+
+/* ===== STATIC IMAGE GALLERY ===== */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
   gap:25px;
-  padding:60px 30px;
+  padding:40px 30px;
 }
-
 .gallery img{
   width:100%;
   border-radius:18px;
@@ -62,7 +98,6 @@ header h2{
   box-shadow:0 15px 35px rgba(0,0,0,.7);
   transition:transform .35s, box-shadow .35s;
 }
-
 .gallery img:hover{
   transform:scale(1.08);
   box-shadow:0 25px 50px rgba(255,215,0,.5);
@@ -72,19 +107,17 @@ header h2{
 .buttons{
   margin:40px 0 60px;
 }
-
 .btn{
   display:inline-block;
   margin:15px;
   padding:18px 32px;
-  font-size:1.1rem;
+  font-size:1.2rem;
   font-weight:bold;
   border-radius:16px;
   text-decoration:none;
   color:#fff;
   box-shadow:0 0 20px rgba(0,0,0,.6);
 }
-
 .whatsapp{background:#25d366;}
 .facebook{background:#1877f2;}
 .tiktok{background:#000;border:1px solid #fff;}
@@ -97,7 +130,6 @@ footer{
 }
 </style>
 </head>
-
 <body>
 
 <header>
@@ -105,39 +137,46 @@ footer{
   <h2>All-Round Quality Men Clothing — Premium Fashion • Bold Identity • Original Style</h2>
 </header>
 
+<!-- ===== FLOATING MOVING IMAGES (3) ===== -->
+<div class="floating-container">
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0138.jpg" alt="Item1">
+    </a>
+  </div>
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0137.jpg" alt="Item2">
+    </a>
+  </div>
+  <div class="floating-item">
+    <a href="https://wa.me/2347031368440" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0132.jpg" alt="Item3">
+    </a>
+  </div>
+</div>
+
 <!-- ===== STATIC IMAGE GALLERY ===== -->
 <div class="gallery">
 
 <a href="https://wa.me/2347031368440" target="_blank">
-<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0138.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d36047f/IMG-20260220-WA0130.jpg">
 </a>
 
 <a href="https://wa.me/2347031368440" target="_blank">
-<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0137.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d36047f/IMG-20260220-WA0121.jpg">
 </a>
 
 <a href="https://wa.me/2347031368440" target="_blank">
-<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0132.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d36047f/IMG-20260220-WA0113.jpg">
 </a>
 
 <a href="https://wa.me/2347031368440" target="_blank">
-<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0130.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d36047f/IMG-20260220-WA0107.jpg">
 </a>
 
 <a href="https://wa.me/2347031368440" target="_blank">
-<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0121.jpg">
-</a>
-
-<a href="https://wa.me/2347031368440" target="_blank">
-<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0113.jpg">
-</a>
-
-<a href="https://wa.me/2347031368440" target="_blank">
-<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0107.jpg">
-</a>
-
-<a href="https://wa.me/2347031368440" target="_blank">
-<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0035.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d36047f/IMG-20260220-WA0035.jpg">
 </a>
 
 </div>
