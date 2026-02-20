@@ -1,195 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I F C Original - Men Clothing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I F C Original - Men's Clothing</title>
 
-  <!-- Social Preview -->
-  <meta property="og:title" content="I F C Original - Men Clothing">
-  <meta property="og:description" content="Original high-quality men clothing: baggy jeans, tops, canvases, belts, and more.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/hero.jpg">
-  <meta property="og:url" content="https://allroundadvert.github.io/I-F-C-Original/">
-  <meta property="og:type" content="website">
+<!-- Social preview -->
+<meta property="og:title" content="I F C Original - Men's Clothing">
+<meta property="og:description" content="Original high-quality men’s clothing: baggy jeans, tops, belts, canvases, and more.">
+<meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0063.jpg">
+<meta property="og:url" content="https://allroundadvert.github.io/I-F-C-ORIGINAL-/">
+<meta property="og:type" content="website">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="I F C Original - Men Clothing">
-  <meta name="twitter:description" content="Original high-quality men clothing: baggy jeans, tops, canvases, belts, and more.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="I F C Original - Men's Clothing">
+<meta name="twitter:description" content="Original high-quality men’s clothing: baggy jeans, tops, belts, canvases, and more.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0063.jpg">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #333333, #4d4d4d);
-      color: #fff;
-      text-align: center;
-      overflow-x: hidden;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin: 50px 20px 10px 20px;
-      color: #ffcc00;
-      text-shadow: 2px 2px 15px #000;
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 10px auto 40px auto;
-      line-height: 1.6;
-      color: #f0f0f0;
-      text-shadow: 1px 1px 5px #000;
-    }
-
-    /* Hero Image */
-    .hero-img {
-      width: 100%;
-      max-width: 450px;
-      margin: 20px auto;
-      border-radius: 20px;
-      cursor: pointer;
-      box-shadow: 0 0 35px #ffcc00;
-      transition: transform 0.4s, box-shadow 0.4s;
-    }
-    .hero-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 50px #ffcc00;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      margin: 15px;
-      padding: 20px 40px;
-      border-radius: 12px;
-      font-size: 1.2em;
-      font-weight: bold;
-      text-decoration: none;
-      color: #fff;
-      box-shadow: 0 0 20px #ffcc00;
-      transition: transform 0.2s, opacity 0.2s, box-shadow 0.3s;
-    }
-    .btn:hover {
-      transform: scale(1.1);
-      opacity: 0.95;
-      box-shadow: 0 0 35px #ffcc00;
-    }
-    .call { background-color: #ff4c4c; }
-    .whatsapp { background-color: #25d366; }
-    .tiktok { background-color: #69C9D0; }
-
-    /* Floating clothes images */
-    .materials-container {
-      position: relative;
-      height: 250px;
-      overflow: hidden;
-      margin: 50px 0;
-    }
-    .material {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      white-space: nowrap;
-      animation: floatLeft 18s linear infinite;
-    }
-    .material img {
-      width: 200px;
-      border-radius: 15px;
-      margin: 0 20px;
-      cursor: pointer;
-      box-shadow: 0 0 25px #ffcc00;
-      transition: transform 0.4s, box-shadow 0.4s;
-    }
-    .material img:hover {
-      transform: scale(1.15);
-      box-shadow: 0 0 40px #ffcc00;
-    }
-    .material:nth-child(1) { animation-delay: 0s; }
-    .material:nth-child(2) { animation-delay: 2s; }
-    .material:nth-child(3) { animation-delay: 4s; }
-    .material:nth-child(4) { animation-delay: 6s; }
-    .material:nth-child(5) { animation-delay: 8s; }
-
-    @keyframes floatLeft {
-      0% { left: 100%; }
-      100% { left: -250px; }
-    }
-
-    /* Static clickable images */
-    .static-images {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 50px 0;
-      gap: 25px;
-    }
-    .static-images a img {
-      width: 220px;
-      border-radius: 15px;
-      cursor: pointer;
-      box-shadow: 0 0 25px #ffcc00;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .static-images a img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 40px #ffcc00;
-    }
-
-    footer {
-      background-color: #111;
-      color: #aaa;
-      padding: 25px;
-      margin-top: 50px;
-      font-size: 0.9em;
-    }
-  </style>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+}
+h1 {
+  margin: 30px 20px 10px;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px #000;
+  color: #ffd700;
+}
+p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 5px #000;
+  font-size: 1.2rem;
+}
+/* Image gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  background: #25d366;
+  box-shadow: 0 0 15px #25d366;
+  transition: transform 0.2s, opacity 0.2s, box-shadow 0.3s;
+}
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 0.95;
+  box-shadow: 0 0 25px #25d366;
+}
+footer {
+  background-color: #111;
+  color: #aaa;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+</style>
 </head>
 
 <body>
 
-  <h1>I F C Original</h1>
-  <p>Original high-quality men clothing: baggy jeans, tops, canvases, belts, and more. <br>
-     Browse our collection and contact us directly via WhatsApp or TikTok!</p>
+<h1>I F C Original - Men's Clothing</h1>
+<p>Original high-quality men’s clothing including baggy jeans, tops, belts, canvases, and more. Explore our latest collections below.</p>
 
-  <!-- Hero Image -->
-  <a href="https://wa.me/2347031368440?text=Hello%2C%20I%20am%20interested%20in%20your%20men%20clothing%20collection." target="_blank">
-    <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/hero.jpg" 
-         alt="I F C Original" class="hero-img">
-  </a>
+<div class="gallery">
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0063.jpg" alt="Clothing 1"></a>
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0020.jpg" alt="Clothing 2"></a>
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0021.jpg" alt="Clothing 3"></a>
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0023.jpg" alt="Clothing 4"></a>
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0024.jpg" alt="Clothing 5"></a>
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0026.jpg" alt="Clothing 6"></a>
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0030.jpg" alt="Clothing 7"></a>
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/main/IMG-20260220-WA0035.jpg" alt="Clothing 8"></a>
+  <a href="https://wa.me/2347031368440" target="_blank"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/main/IMG-20260220-WA0036.jpg" alt="Clothing 9"></a>
+</div>
 
-  <!-- Floating Images -->
-  <div class="materials-container">
-    <div class="material"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/baggy-jeans.jpg" alt="Baggy Jeans"></div>
-    <div class="material"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/tops.jpg" alt="Tops"></div>
-    <div class="material"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/canvas-shoes.jpg" alt="Canvas Shoes"></div>
-    <div class="material"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/belts.jpg" alt="Belts"></div>
-    <div class="material"><img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/accessories.jpg" alt="Accessories"></div>
-  </div>
+<a class="btn" href="https://wa.me/2347031368440" target="_blank">Contact on WhatsApp</a>
+<a class="btn" href="https://tiktok.com/@ifeanyianioga" target="_blank" style="background:#ff0055; box-shadow:0 0 15px #ff0055;">Visit TikTok</a>
 
-  <!-- Static Clickable Images -->
-  <div class="static-images">
-    <a href="https://wa.me/2347031368440?text=Hello%2C%20I%20am%20interested%20in%20your%20men%20clothing." target="_blank">
-      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/baggy-jeans.jpg" alt="Baggy Jeans">
-    </a>
-    <a href="https://wa.me/2347031368440?text=Hello%2C%20I%20am%20interested%20in%20your%20men%20clothing." target="_blank">
-      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/tops.jpg" alt="Tops">
-    </a>
-    <a href="https://wa.me/2347031368440?text=Hello%2C%20I%20am%20interested%20in%20your%20men%20clothing." target="_blank">
-      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-Original/main/canvas-shoes.jpg" alt="Canvas Shoes">
-    </a>
-  </div>
-
-  <!-- Contact Buttons -->
-  <h2>Contact Us</h2>
-  <a class="btn call" href="tel:07031368440">Call Us</a>
-  <a class="btn whatsapp" href="https://wa.me/2347031368440?text=Hello%2C%20I%20am%20interested%20in%20your%20men%20clothing." target="_blank">WhatsApp</a>
-  <a class="btn tiktok" href="https://tiktok.com/@ifeanyianioga" target="_blank">TikTok</a>
-
-  <footer>
-    © 2026 I F C Original. All rights reserved.
-  </footer>
+<footer>
+  © 2026 I F C Original. All rights reserved.
+</footer>
 
 </body>
 </html>
