@@ -3,14 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>I F C Original - All Round Quality Men's Clothing</title>
+<title>I F C Original - Men's Clothing</title>
 
 <!-- Social preview for WhatsApp & Facebook -->
 <meta property="og:title" content="I F C Original - All Round Quality Men's Clothing">
 <meta property="og:description" content="I saw one of your items, I love to buy! Can I have more info?">
 <meta property="og:image" content="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/refs/heads/main/1771620723471.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://allroundadvert.github.io/I-F-C-ORIGINAL-/">
 <meta property="og:type" content="website">
 
@@ -29,18 +27,28 @@ body {
   overflow-x: hidden;
 }
 
-/* Powerful Top Header */
+/* Animated Top Header */
 header {
-  background: linear-gradient(135deg, #ffcc00, #ff6600);
-  color: #000;
-  padding: 50px 20px;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-shadow: 3px 3px 10px #000;
+  background: linear-gradient(135deg, #1f1c2c, #928dab, #1f1c2c);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  padding: 100px 20px;
+  color: #ffd700;
+  text-shadow: 3px 3px 20px #000;
+}
+header h1 {
+  font-size: 4rem;
+  margin: 0;
+  animation: glowText 2s ease-in-out infinite alternate;
+}
+header p {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  animation: fadeIn 3s ease-in forwards;
+  opacity: 0;
 }
 
-/* Floating Images */
+/* Floating clickable images */
 .floating-container {
   position: relative;
   height: 250px;
@@ -67,14 +75,30 @@ header {
   box-shadow: 0 0 35px #ffd700;
 }
 .floating-item:nth-child(1){animation-delay:0s;}
-.floating-item:nth-child(2){animation-delay:5s;}
+.floating-item:nth-child(2){animation-delay:3s;}
 
 @keyframes floatLeft {
   0% {left:100%;}
   100% {left:-250px;}
 }
 
-/* Static Gallery */
+@keyframes glowText {
+  0% {text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ff9900, 0 0 40px #ff9900;}
+  50% {text-shadow: 0 0 20px #ffd700, 0 0 30px #ff9900, 0 0 40px #ff6600, 0 0 50px #ff6600;}
+  100% {text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ff9900, 0 0 40px #ff9900;}
+}
+
+@keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+@keyframes fadeIn {
+  to {opacity: 1;}
+}
+
+/* Static gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -107,20 +131,10 @@ header {
   box-shadow: 0 0 15px #25d366;
   transition: transform 0.2s, opacity 0.2s, box-shadow 0.3s;
 }
-.btn.facebook { background: #1877f2; box-shadow: 0 0 15px #1877f2; }
-.btn.tiktok { background: #000; box-shadow: 0 0 15px #000; }
-
 .btn:hover {
   transform: scale(1.1);
   opacity: 0.95;
-}
-
-/* Video */
-video {
-  width: 80%;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  margin: 30px 0;
+  box-shadow: 0 0 25px #25d366;
 }
 
 footer {
@@ -130,12 +144,24 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+
+/* Video */
+video {
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin: 30px 0;
+}
 </style>
 </head>
-
 <body>
 
-<header>I F C ORIGINAL - All Round Quality Men's Clothing</header>
+<header>
+  <h1>I F C ORIGINAL</h1>
+  <p>All Round Quality Men's Clothing</p>
+</header>
+
+<p>Original high-quality men’s clothing including baggy jeans, tops, belts, canvases, and more. Explore our latest collections below.</p>
 
 <!-- Video Section -->
 <video autoplay loop muted playsinline>
@@ -146,55 +172,50 @@ footer {
 <!-- Floating Clickable Images (2 moving) -->
 <div class="floating-container">
   <div class="floating-item">
-    <a href="https://wa.me/2347031368440" target="_blank">
+    <a href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy!" target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0138.jpg" alt="Item 1">
     </a>
   </div>
   <div class="floating-item">
-    <a href="https://wa.me/2347031368440" target="_blank">
+    <a href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy!" target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0137.jpg" alt="Item 2">
     </a>
   </div>
 </div>
 
-<!-- Static Images -->
+<!-- Static Gallery -->
 <div class="gallery">
   <div class="gallery-item">
-    <a href="https://wa.me/2347031368440" target="_blank">
+    <a href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy!" target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0132.jpg" alt="Item 3">
     </a>
   </div>
   <div class="gallery-item">
-    <a href="https://wa.me/2347031368440" target="_blank">
+    <a href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy!" target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0130.jpg" alt="Item 4">
     </a>
   </div>
   <div class="gallery-item">
-    <a href="https://wa.me/2347031368440" target="_blank">
+    <a href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy!" target="_blank">
       <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0121.jpg" alt="Item 5">
     </a>
   </div>
   <div class="gallery-item">
-    <a href="https://wa.me/2347031368440" target="_blank">
-      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d36047f/IMG-20260220-WA0113.jpg" alt="Item 6">
+    <a href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy!" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0107.jpg" alt="Item 6">
     </a>
   </div>
   <div class="gallery-item">
-    <a href="https://wa.me/2347031368440" target="_blank">
-      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d36047f/IMG-20260220-WA0107.jpg" alt="Item 7">
-    </a>
-  </div>
-  <div class="gallery-item">
-    <a href="https://wa.me/2347031368440" target="_blank">
-      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0035.jpg" alt="Item 8">
+    <a href="https://wa.me/2347031368440?text=I%20saw%20one%20of%20your%20items%20and%20I%20love%20to%20buy!" target="_blank">
+      <img src="https://raw.githubusercontent.com/allroundadvert/I-F-C-ORIGINAL-/130699b2f68bc109242100ae62d0dab36d36047f/IMG-20260220-WA0035.jpg" alt="Item 7">
     </a>
   </div>
 </div>
 
 <!-- Buttons -->
 <a class="btn" href="https://wa.me/2347031368440" target="_blank">WhatsApp Us</a>
-<a class="btn tiktok" href="https://tiktok.com/@ifeanyianioga" target="_blank">TikTok</a>
-<a class="btn facebook" href="https://www.facebook.com/share/174qi1g7NZ/" target="_blank">Facebook</a>
+<a class="btn" href="https://www.facebook.com/share/174qi1g7NZ/" target="_blank">Facebook</a>
+<a class="btn" href="https://tiktok.com/@ifeanyianioga" target="_blank">TikTok</a>
 
 <footer>
   © 2026 I F C Original. All rights reserved.
